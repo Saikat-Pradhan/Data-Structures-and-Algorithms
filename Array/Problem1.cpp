@@ -27,10 +27,10 @@ int main() {
     vector<int> arr;
     int n,x;
 
-    cout<<"Enter total number of elements:";
+    cout<<"Enter total number of elements: ";
     cin>>n;
 
-    cout<<"Enter the elements of the array:";
+    cout<<"Enter the elements of the array: ";
     for(int i=0;i<n;i++){
         cin>>x;
         arr.push_back(x);
