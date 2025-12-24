@@ -6,7 +6,17 @@
 using namespace std;
 
 int maxSubArrSum(vector<int> arr){
-    
+    int n=arr.size();
+    int maxEnding = arr[0];
+    int res = arr[0];
+
+    for(int i=0;i<n;i++){
+       maxEnding = max(maxEnding + arr[i], arr[i]);
+
+       res = max(res, maxEnding);
+    }
+
+    return res;
 }
 
 int main() {

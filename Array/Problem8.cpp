@@ -6,12 +6,12 @@ using namespace std;
 
 int maxProfit(vector<int> arr){
     int n=arr.size();
-    int minP=arr[0];
+    int minSoFar=arr[0];
     int profit=0;
 
     for(int i=0;i<n;i++){
-       minP = min(arr[i], minP);
-       profit = max(arr[i]-minP, profit); 
+       minSoFar = min(arr[i], minSoFar);
+       profit = max(arr[i]-minSoFar, profit); 
     }
 
     return profit;
